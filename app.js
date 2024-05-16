@@ -53,10 +53,18 @@ const obtenerPokeRival = () =>{
     console.log(imgPoke2);
 }
 
+//SECCION DEL BOTON DE ATAQUE QUE SE VE EN LA PAGINA!!
 const combate = ()=>{
-   const ataqueRival = parseInt(poke2Ataque.textContent);
-   const ataquePropio = parseInt(pokeAtaque.textContent);
+    const ataqueRival = parseInt(poke2Ataque.textContent);
+    const ataquePropio = parseInt(pokeAtaque.textContent);
 
+    if (ataqueRival > ataquePropio) {
+       alert("¡Ay cañon! ¡El rival te ganó!");
+    }else if (ataquePropio > ataqueRival) {
+        alert("¡Felicidades! Has ganado el combate");
+    }else {
+        alert("¿Apoco si? ¡Quedaron en empate!");
+    }
 
    console.log(ataquePropio);
 }
